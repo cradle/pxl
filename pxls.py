@@ -79,9 +79,9 @@ class Pxl(gui.Paintable, gui.Keyable, gui.Updateable):
       self.loc[0] += delay * self.acc[0]
       self.loc[1] += delay * self.acc[1]
       
-      if self.loc[0] % 640 != self.loc[0] or self.loc[1] % 640 != self.loc[1] :
-        self.loc[0] = self.loc[0] % 640
-        self.loc[1] = self.loc[1] % 640
+      if self.loc[0] % 800 != self.loc[0] or self.loc[1] % 600 != self.loc[1] :
+        self.loc[0] = self.loc[0] % 800
+        self.loc[1] = self.loc[1] % 600
         self.lines.append([self.loc.dup()]*10)
       else:
         self.lines[0].pop(0)

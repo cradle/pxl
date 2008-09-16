@@ -9,7 +9,7 @@ def main():
     pygame.init()
     pygame.font.init()
     
-    screen = pygame.display.set_mode( (640,640), DOUBLEBUF)
+    screen = pygame.display.set_mode( (800,600), DOUBLEBUF)
     
     driver = states.StateDriver(screen)
     title = TitleScreen(driver,screen)
